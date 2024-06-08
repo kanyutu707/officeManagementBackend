@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 
-@CrossOrigin(origins = "http://localhost:5173",maxAge = 3600, allowedHeaders = "*")
+@CrossOrigin(origins = "http://localhost:5173",maxAge = 3600, allowedHeaders = "*", allowCredentials = "true")
 @RestController
 @RequestMapping("/authenticate/")
 @RequiredArgsConstructor
